@@ -9,5 +9,7 @@ use App\Models\Tweet;
 class Member extends Model
 {
     use HasFactory;
-    
+     public function tweet() : Relation {
+        return $this->hasMany(Tweet::class);
+    }
 }

@@ -14,5 +14,10 @@
         {{$data->name}}
         @endforeach
     </div>
+    <div>
+        @foreach($tweets as $tweet)
+        {{$tweet}}
+        @endforeach
+    </div>
 </body>
 </html>
